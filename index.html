@@ -18,6 +18,7 @@ button{background:var(--acc);color:#04251f;border:0;border-radius:10px;font-weig
 input[type=range]{flex:1;accent-color:var(--acc);height:36px}
 .yr{font-weight:700;min-width:3.2rem;text-align:right}
 .ft{color:var(--mut);font-size:.75rem;margin:14px 2px 6px;line-height:1.5}
+.leg{background:var(--card);border:1px solid #1d4252;border-radius:12px;padding:10px 12px;margin-top:12px;font-size:.82rem;line-height:1.5}.leg b{display:block;margin-bottom:6px}.leg div{display:flex;align-items:flex-start;gap:10px;margin:5px 0}.leg i{flex:0 0 22px;height:12px;margin-top:4px;border-radius:2px;display:block}
 a{color:var(--acc)}
 </style>
 </head>
@@ -31,6 +32,12 @@ a{color:var(--acc)}
 <input id="sl" type="range" min="0" max="15" value="0" aria-label="Ano">
 <span class="yr" id="yr">2011</span>
 </div>
+<div class="leg"><b>Como ler a imagem</b>
+<div><i style="background:#f5e642"></i><span>Linha amarela: limite da microbacia do Córrego Correntinho.</span></div>
+<div><i style="background:#ff14c8"></i><span>Magenta: vegetação suprimida (desmatamento) detectada nas imagens. O valor “Supressão acumulada” soma a área desde 2014, em hectares (ha; 1 ha = 10.000 m²).</span></div>
+<div><i style="background:#5fe3f0"></i><span>Ciano: área queimada identificada na cena do ano, em ha. Aparece apenas nos anos com ocorrência.</span></div>
+<div><i style="background:linear-gradient(90deg,#8a6d3b,#2f4f2a)"></i><span>Fundo: imagem Landsat em cor natural, estação seca. Verde escuro indica vegetação densa; tons claros indicam solo exposto ou pastagem seca.</span></div>
+<div><i style="background:#19c2a0"></i><span>Barra inferior: andamento da série de 2011 a 2026.</span></div></div>
 <p class="ft">Elaboração: Aurelio Ribeiro dos Santos (2026), Engenheiro Ambiental e Sanitarista, CREA-TO 309875 D. Imagens: Landsat (USGS/NASA), estação seca. Estudo ambiental elaborado para o Município de Miracema do Tocantins (SEMMA). Material técnico preliminar, sujeito à revisão do responsável.</p>
 </main>
 <script>
